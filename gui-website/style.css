@@ -1,0 +1,17 @@
+/*
+This file holds the style information for Prickle, a page that helps pricks connect.
+*/
+/*body, select, button {
+	font-family: Georgia, serif;
+	font-size: 12pt;
+}*/
+q {
+	font-style: italic;
+}
+.invisible {
+	display: none;
+}
+.loading img {
+	width: 10px;
+	height: auto;
+}
