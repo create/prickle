@@ -3,11 +3,12 @@ html {
 }
 body, pre, #input { font-family: Courier, "Courier New", monospace, serif; }
 
-body { font-size: 12px; height: 100%; margin: 0; padding: 8px; }
+body { font-size: 12px; height: 100%; margin: 0; padding: 8px; 
+}
 
 h1 { font-weight: normal; font-size: 12px; margin-bottom: 5px; }
 
-sub { font-size: 10; }
+sub { font-size: 10px; }
 
 pre {
     display: inline;
@@ -18,8 +19,15 @@ a {
     color: gray;
     text-decoration: none;
 }
-#clear {
+#clear, .toplink {
     cursor: pointer;
+    float: right;
+}
+.toplink {
+    font-size: 11px;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    color: #3b5998;
+    margin-left: 5px;
 }
 .space {
     margin-bottom: 10px;
@@ -52,6 +60,7 @@ a:hover { background: #def4f7; }
     margin: 0;
     padding: 0;
     width: 90%;
+    background-color: rgba(0,0,0,0);
 }
 
 #prefix { float:left; }
@@ -69,7 +78,7 @@ a:hover { background: #def4f7; }
     margin: 3px;
 }
 
-.help, .intro { width: 38em; }
+.help { width: 38em; }
 
 .help h1, .help h2 {
     font-weight: bold;
@@ -111,7 +120,7 @@ a.helpMin:hover { background: #f9f9f9; }
     width: 35em;
     height: 300px;
 }
-strong {
+strong, .strong {
     font-weight: bold;
     color: green;
 }

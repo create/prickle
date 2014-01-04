@@ -1,41 +1,37 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <link href="styles/styles.css" media="screen" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="js/jquery.js" ></script>
-    <script type="text/javascript" src="js/script.js" ></script>
-    <title>Prickle</title>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<link href="styles/styles.css" media="screen" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/script.js" ></script>
+		<title>Prickle</title>
 		<link href="images/prickle.ico" type="image/ico" rel="shortcut icon" />
-  </head>
-  <body>
-  <div id="console">
-      <img src="images/pricklesmall.png" height="80" alt="logo" />
-      <div class="intro">
-	<p>
-	  A social network that will blow your socks off.
-	</p>
-	<p>
-	  Enter <strong>help</strong> for 
-	  information.
-	</p>
-      </div>
-      <noscript>
-	<span class="error">Oops!  JavaScript is disabled.</span>
-      </noscript>
-    </div>
-    
-    <form onsubmit="return reply();">
-      <span id="prefix">&gt;&nbsp;</span>
-      <input type="text" name="input" id="input" autocomplete="off"/><a id="clear">Clear</a>
-    </form>
-    <div class="space">
-    </div>
-    <!--[if IE]>
-	<style type="text/css">#console,form {display:none;}</style>
-	js-scheme doesn't work with Internet Explorer.
-    <![endif]-->
-
-
-  </body>
+	</head>
+	<body>
+		<div id="console">
+	    <div class="intro">
+			<img src="images/pricklesmall.png" height="80" alt="logo" />
+			<a class="toplink" title="What are we all about?">About</a>
+			<a class="toplink" title="Review our terms.">Terms</a>
+			<a class="toplink" title="Privacy on Prickle. (Heh.)">Privacy</a>
+			<p>A social network that's <em>not</em> for everyone.</p>
+			<p>Enter <strong>help</strong> for... you guessed it. Help.</p>
+			</div>
+			<noscript>
+				<span class="error">Oops!  JavaScript is disabled.</span>
+	        </noscript>
+	    </div>
+	    <form onsubmit="return reply();">
+			<span id="prefix">&gt;&nbsp;</span>
+			<input type="text" name="input" id="input" autocomplete="off"/>
+	    </form>
+	    <div class="space">
+	    	<a id="clear">Clear</a>
+		</div>
+		<!--[if IE]>
+		<style type="text/css">#console,form {display:none;}</style>
+		js-scheme doesn't work with Internet Explorer.
+		<![endif]-->
+	</body>
 </html>
