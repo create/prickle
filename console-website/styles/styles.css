@@ -55,6 +55,7 @@ a:hover { background: #def4f7; }
 }
 
 #prefix { float:left; }
+.prefix {}
 
 
 .block {
@@ -62,7 +63,7 @@ a:hover { background: #def4f7; }
     margin: 5px 0 5px 0;
 }
 
-.help {
+.help, .block {
     background: #f8f8f8;
     font-size: 12px;
     margin: 3px;
