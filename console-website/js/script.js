@@ -64,15 +64,14 @@ function userfn_help() {
     '<div id="helpBody' + helpid + '">' +
     '<p>Welcome to Prickle ' + version + '!</p>' +
     '<p>' +
-      'This social began as an experiment. ' +
-      'It\'s still an experiment. ' +
+      'An experiment in web interfaces. ' +
     '</p>' +
     '<p>' +
       'Prickle is written by brothers Jason and Jeff.' +
     '</p>' +
     '<p>' +
       'Visit the <a href="https://github.com/jeffpyke/prickle">Github</a> ' +
-      'page for more information. Don\'t hack us. (Please)' +
+      'page for more information.' +
     '</p>' +
     builtins +
     '</div></div>';
@@ -154,126 +153,6 @@ function clearOut() {
 	$(".output").remove();
 	return false;
 }
-////////////////////////////////////////
-
-// case 1:
-//           System.out.println("Who would you like to send a message to?");
-//           String msgName = capWords(input.nextLine());
-//           try {   
-//             Person msgPerson = new Person(users.get(msgName));
-//             System.out.println("What is your message?");
-//             msgPerson.sendMessage(input.nextLine(), name);
-//           } catch (Exception e) {
-//             System.out.println("Person does not exist.");
-//           }
-//           break;
-//         case 2:
-//           System.out.println("Enter the group name");
-//           String groupName = capWords(input.nextLine());
-//           System.out.println("Enter the group description");
-//           String groupDesc = input.nextLine();
-//           Group group = new Group(groupName, groupDesc);
-//           break;
-//         case 3:
-//           System.out.println("Relationship Status: \n");
-//           System.out.println("1) " + RelStatus.single.toString());
-//           System.out.println("2) " + RelStatus.inrel.toString());;
-//           System.out.println("3) " + RelStatus.open.toString());
-//           System.out.println("4) " + RelStatus.complicated.toString());
-//           System.out.println("5) " + RelStatus.married.toString());
-//           try {
-//             int relationshipNumber = Integer.parseInt(input.nextLine());
-//             RelStatus status = RelStatus.getRelById(relationshipNumber);
-//             currentUser.setRelStatus(status);
-//             System.out.println("You set your relationship to: " + status.toString());
-//           } catch(InputMismatchException e) {
-//             System.out.println("Please enter a number!");
-//           }
-//           break;
-
-//         case 4:
-//           System.out.println("Who would you like to add?");
-
-//           String addName = capWords(input.nextLine());
-//           if (personExists(addName)) {
-//             currentUser.addFriend(addName);
-//             System.out.println("You are now friends with " + capWords(addName) + ".");
-//           } else {
-//             System.out.println("Person does not exist.");
-//           }
-
-//           break;
-//         case 5:
-//           System.out.println("Who would you like to remove?");
-//           String remName = capWords(input.nextLine());
-//           if (currentUser.getFriends().contains(remName)) {
-//             currentUser.removeFriend(remName);
-//             System.out.println("Removed.");
-//           } else {
-//             System.out.println("Person is not on your friends list.");
-//           }
-//           break;
-//         case 6:
-//           System.out.println("Status Update: \n");
-//           try {
-//             currentUser.postStatus(input.nextLine());
-//           } catch (FileNotFoundException e) {
-//             // TODO Auto-generated catch block
-//           }
-//           break;
-//         case 7:
-//           System.out.println(currentUser.getProfile());
-//           break;
-//         case 8:
-//           System.out.println("Who would you like to view?");
-//           String viewName = capWords(input.nextLine());
-//           if (personExists(viewName)) {
-//             Person viewPerson = null;
-//             try {
-//               viewPerson = new Person(users.get(viewName));
-//             } catch (FileNotFoundException e1) {
-//               // TODO Auto-generated catch block
-//               e1.printStackTrace();
-//             }
-//             if (viewPerson.getFriends().contains(name)) {
-//               try {
-//                 System.out.println(new Person(users.get(viewName)).getProfile());
-//               } catch (Exception e) {
-//                 System.out.println("Person does not exist.");
-//               }
-//             } else {
-//               System.out.println(viewName + " has not added you as a friend.");
-//             }
-//           } else {
-//             System.out.println("Person does not exist.");
-//           }
-//           break;
-//         case 9:
-//           System.out.println("Messages:");
-//           List<Message> msgs = currentUser.getMessages();
-//           int min = Math.min(10, msgs.size());
-//           for (int i = 1; i <= min; i++) {
-//             System.out.println(i + ") " + msgs.get(i - 1));
-//           }
-//           System.out.println((min + 1) + ") close inbox");
-//           int choice = Integer.parseInt(input.nextLine());
-//           if (choice < min + 1) {
-//             try {
-//               Person msgPerson = new Person(users.get(msgs.get(choice - 1).getSender()));
-//               System.out.println("What is your message?");
-//               msgPerson.sendMessage(input.nextLine(), currentUser.toString());
-//             } catch (FileNotFoundException e) {
-//               // TODO Auto-generated catch block
-//               e.printStackTrace();
-//             }
-//           }
-//           break;
-//         case 10:
-//           loggedIn = false;
-//           break;
-
-
-////////////////////////////////////////////
 $( document ).ready(function() {
   document.getElementById("input").onkeydown = function(event) {
      if (!event)
